@@ -20,19 +20,24 @@ All configurations are written at a production-ready level and can be applied di
 ---
 
 ## Repository Structure
+
+```
 TENCENT_Terraform_lab/
-├── modules/                  # Reusable Terraform modules
+│
+├── modules/
 │   ├── vpc/                  # VPC, Subnet, Route Table
 │   ├── cvm/                  # Cloud Virtual Machine
-│   ├── cam/                  # Cloud Access Management (IAM)
-│   ├── security_group/       # Security Group rules
-│   └── ...
-├── environments/             # Environment-specific configurations
+│   ├── cam/                  # Cloud Access Management
+│   └── security_group/       # Security Group rules
+│
+├── environments/
 │   ├── dev/
 │   ├── stg/
 │   └── prod/
-├── .gitlab-ci.yml            # GitLab CI/CD pipeline
+│
+├── .gitlab-ci.yml
 └── README.md
+```
 
 ---
 
